@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 60px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #B2ACA9;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    width: 1050px;
+    margin: auto;
+}
+
+.col {
+    flex-basis: 50% ;
+}
+
+.col1 {
+    margin-right: 35px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 70px;
+}
+
+p {
+    color: #FFF;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: justify;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #FFF;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #B2ACA9;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 15px;
+    background-position: center;
+    background-size: cover; 
+    transition: 0.5s;
+}
+
+.card1 {
+    background-image: url(images/pic-1.jpg);
+}
+
+.card2 {
+    background-image: url(images/pic-2.jpg);
+}
+
+.card3 {
+    background-image: url(images/pic-3.jpg);
+}
+
+.card4 {
+    background-image: url(images/pic-4.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #FFF;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 9px;
+}
